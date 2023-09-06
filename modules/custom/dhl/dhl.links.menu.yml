@@ -1,0 +1,10 @@
+dhl.form:
+  title: 'Form'
+  description: 'To Fill the form for DHL location'
+  parent: main
+  menu_name: main
+  route_name: dhl.form
+  weight: 1
+  options:
+    attributes:
+      target: _blank

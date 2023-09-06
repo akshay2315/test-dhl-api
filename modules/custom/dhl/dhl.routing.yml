@@ -1,0 +1,8 @@
+dhl.form:
+  path: '/dhl_form'
+  defaults:
+    _title: DHL Form
+    _form: '\Drupal\dhl\form\dhlform'
+  requirements:
+    _permission: 'access content'
+    _access: 'TRUE'

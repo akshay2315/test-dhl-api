@@ -1,0 +1,5 @@
+name: DHL form
+description: Form for DHL API
+type: module
+package: custom
+core_version_requirement: ^9 || ^10

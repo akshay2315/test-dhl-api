@@ -1,0 +1,47 @@
+<?php
+
+// function dhl_install() {
+//   drupal_install_schema('dhl');
+// }
+
+/**
+ * Implements hook_schema()
+ */
+
+function dhl_schema(){
+  $schema['dhllocation'] = [
+    'description' => 'This is the table for storing the dhl location',
+    'fields' => [
+      'id' => [
+        'description' => 'The primary identifier for the dhl location',
+        'type' => 'serial',
+        'not null' => TRUE,
+        'unsigned' => TRUE,
+      ],
+      'country' => [
+        'description' => 'Country',
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 256,
+      ],
+      'city' => [
+        'description' => 'City',
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 256,
+      ],
+      'postal_code' => [
+        'description' => 'Postal Code',
+        'type' => 'int',
+        'length' => 20,
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+
+}
+
+?>
